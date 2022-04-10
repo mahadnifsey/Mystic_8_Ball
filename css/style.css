@@ -115,6 +115,8 @@ h1 {
   100%{transform:translateY(-10px);}
 }
 
+/* The Ball */
+/*--------------------------*/
 #theball {
   display: flex;
   justify-content: center;
@@ -123,7 +125,7 @@ h1 {
 }
 
 #theball > section {
-  border: 1px solid red;
+  border: 1px solid green;
 }
 
 #theball > section > img {
@@ -131,3 +133,53 @@ h1 {
   height: auto;
 }
 
+#theball > section > #main {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 5rem;
+  color: purple;
+}
+
+/* Form and question */
+/*--------------------------*/
+#question > form {
+  display: flex;
+  justify-content: center;
+}
+#question input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 25px 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#question input:placeholder-shown {
+  width: 12rem;
+}
+
+#buttons > a > button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #000C7A;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+#buttons > a > button:hover,.form button:active,.form button:focus {
+  background: #072DDB;
+}

@@ -2,7 +2,15 @@ let userName = "Mary";
  
 userName ? console.log(`Hello ${userName}!`): console.log("Hello!")
 
-let userQuestion = "When will i win the lottery?";
+let userQuestion = '';
+
+function myFunction() {
+  userQuestion = document.getElementById("search").value;
+}
+
+function myOtherFunction() {
+    console.log(userQuestion);
+  }
 
 console.log(`${userName} asked: ${userQuestion}`);
 
@@ -40,3 +48,5 @@ let eightBall = "";
     }
 
     console.log(`The Magic 8 Ball says, ${eightBall}.`);
+
+    document.getElementById("main").innerHTML = eightBall;
