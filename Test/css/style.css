@@ -1,0 +1,126 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, black, purple);
+}
+
+#content { /* White Section */
+  background: white;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 1rem;
+}
+
+.intro-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  height: 10rem;
+}
+
+.intro-text > span {
+  font-size: 2rem;
+}
+.intro-text > span {
+	height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+}
+
+.intro-text > span > span {
+	display: inline-block;
+  position: relative;
+  text-shadow: 10px 15px 30px rgba(0,0,0,0.2);
+}
+
+.intro-text > span > span:nth-of-type(1) {
+	left: 0;
+  z-index: 1;
+  color: #0019A4;
+}
+.intro-text > span > span:nth-of-type(2) {
+	left: 0;
+  z-index: 2;
+  animation: animate 3s linear alternate infinite;
+}
+.intro-text > span > span:nth-of-type(3) {
+	left: 0;
+  z-index: 1;
+  color: #0019A4;
+}
+.intro-text > span > span:nth-of-type(4) {
+	left: 0;
+  z-index: 3;
+  animation: animate 3s linear alternate-reverse infinite;
+}
+.intro-text > span > span:nth-of-type(5) {
+	left: 0;
+  z-index: 1;
+}
+.intro-text > span > span:nth-of-type(6) {
+	left: 0;
+  z-index: 2;
+  color: #0019A4;
+  animation: animate 3s linear alternate infinite;
+}
+.intro-text > span > span:nth-of-type(7) {
+	left: 0;
+  top: -20px;
+  font-size: 5rem;
+  z-index: 3;
+  animation: animate 3s linear alternate-reverse infinite;
+}
+.intro-text > span > span:nth-of-type(8) {
+	left: 0;
+  z-index: 1;
+  color: #0019A4;
+}
+.intro-text > span > span:nth-of-type(9) {
+	left: 0;
+  z-index: 3;
+  animation: animate 3s linear alternate infinite;
+}
+.intro-text > span > span:nth-of-type(10) {
+	left: 0;
+  z-index: 1;
+  color: #0019A4;
+}
+.intro-text > span > span:nth-of-type(11) {
+	left: 0;
+  z-index: 2;
+  animation: animate 3s linear alternate-reverse infinite;
+}
+
+@keyframes animate {
+  0%{transform:translateY(10px);}
+  100%{transform:translateY(-10px);}
+}
+
+
+  /*  */
+
+#eightball {
+  width: 350px;
+  height: 350px;
+  background: black;
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#answer {
+  font-size: 25px;
+}

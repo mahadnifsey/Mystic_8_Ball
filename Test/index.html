@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<section class="ani">
+		<div id="content">
 			<h1 class="intro-text">
 				<span>
 				<span>M</span>
@@ -28,23 +28,15 @@
 				<span>L</span>
 				</span>
 			</h1>
-		</section>
-
-		<section id="theball">
-			<section>
-				<img src="images/1.jpg" alt="8 ball">
-				<h3 id="main"></h3>
-			</section>
-			<input id="search" placeholder="Search for..."></input>
-			<button value='send' id="submit" onclick="myFunction()">Search</button>
-			<button value='append' id="append" onclick="myOtherFunction()">Append</button>
-		</section>
-
-		<section id="user_questions">
-			<h3 id="askedd"></h3>
-		</section>
+			<h2>Type your question below:</h2>
+			<textarea id="questionArea" cols="30" rows="4"></textarea>
+			<br>
+			<button>Shake!</button>
+			<div id="eightball">
+				<p id="answer">Ask again later!</p>
+			</div>
+		</div>
 		
 		<script type="text/javascript" src="js/main.js"></script>
-
 	</body>
 </html>

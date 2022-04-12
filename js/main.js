@@ -2,7 +2,7 @@ let userName = "Mary";
  
 userName ? console.log(`Hello ${userName}!`): console.log("Hello!")
 
-let userQuestion = '';
+let userQuestion = "";
 
 function myFunction() {
   userQuestion = document.getElementById("search").value;
@@ -11,6 +11,7 @@ function myFunction() {
 function myOtherFunction() {
     console.log(userQuestion);
   }
+
 
 console.log(`${userName} asked: ${userQuestion}`);
 
@@ -48,5 +49,5 @@ let eightBall = "";
     }
 
     console.log(`The Magic 8 Ball says, ${eightBall}.`);
-
+// How to print a variable.
     document.getElementById("main").innerHTML = eightBall;
