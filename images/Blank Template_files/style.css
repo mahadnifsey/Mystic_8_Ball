@@ -140,47 +140,8 @@ body {
   margin: 0 auto;
   font-size: 1rem;
   color: white;
-  text-shadow:0.009rem 0.009rem 0.75rem #fff;  
-}
-
-/* Button */
-
-filter {
-  position: ;
-}
-
-button {
-  background: none;
-  border: 3px solid #000C7A;
-  border-radius: 5px;
-  font: inherit;
-  line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
-  color: #000C7A;
-  transition: 0.25s;
-}
-
-button:hover, 
-button:focus {
-  color: white;
-  background: #072DDB;
-  border: 3px solid #072DDB;
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em transparent;
-}  
-
-button:active {
-  color: white;
-  background: #000C7A;
-  border: 3px solid purple;
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em transparent;
-
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 adjust-hue(red, 45deg)); 
+  text-shadow:0.009rem 0.009rem 0.75rem #fff;
+  
 }
 
 
@@ -191,7 +152,7 @@ and (min-device-width : 1000px)
 and (max-device-width : 1920px) {
 /* Styles */
 .intro-text > span > span {
-  font-size: 7rem;
+  font-size: 4rem;
 }
 }
 
@@ -201,6 +162,6 @@ and (min-device-width : 750px)
 and (max-device-width : 1000px) {
 /* Styles */
 .intro-text > span > span {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 }

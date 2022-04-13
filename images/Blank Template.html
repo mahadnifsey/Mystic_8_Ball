@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Blank Template</title>
+
+		<!-- external CSS link -->
+		
+		
+	<link rel="stylesheet" href="Blank%20Template_files/normalize.css"><link rel="stylesheet" href="Blank%20Template_files/style.css"></head>
+	<body>
+		<div id="content">
+			<h1 class="intro-text">
+				<span>
+					<span>M</span>
+					<span>Y</span>
+					<span>S</span>
+					<span>T</span>
+					<span>I</span>
+					<span>C</span>
+					<span>8</span>
+					<span>B</span>
+					<span>A</span>
+					<span>L</span>
+					<span>L</span>
+				</span>
+			</h1>
+			<h2>Type your question below:</h2>
+			<textarea id="questionArea" cols="30" rows="4" required=""></textarea>
+			<br>
+			<button type="button" onclick="shake()" value="Click">Shake!</button>
+			<div id="eightball">
+				<img id="magic8ball" src="Blank%20Template_files/1.jpg" alt="8 Ball" style="animation-name: shake;">
+				<p id="answer">It is decidedly so</p>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="Blank%20Template_files/main.js"></script>
+	<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

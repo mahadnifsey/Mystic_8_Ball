@@ -7,7 +7,7 @@ function generate_random(max_number) {
 
 // Animation for 8 Ball shake.
 function shake() {
-    var box = document.getElementById("magic8ball");
+    var box = document.getElementById("magic8ball", "answer");
     box.style.animationName = null;
     box.offsetHeight; /* trigger reflow */
     box.style.animationName = "shake";
