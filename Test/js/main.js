@@ -1,9 +1,8 @@
+// Magic 8 Ball.
 function generate_random(max_number) {
     // Generates a random number from 0 to max-number.
     return Math.round(Math.random()*max_number);
 }
-
-
 
 // Animation for 8 Ball shake.
 function shake() {
@@ -12,7 +11,6 @@ function shake() {
     box.offsetHeight; /* trigger reflow */
     box.style.animationName = "shake";
   };
-
 
 // Select the elements on the page to interact with!
 let button =document.querySelector("button");
